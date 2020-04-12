@@ -1,8 +1,8 @@
 const staticAssets = [
-	'./index.html',
-	'./dist/img/favicon.ico',
-	'./dist/css/app.css',
-	'./dist/js/index.js',
+	'/sandbox/drum/index.html',
+	'/sandbox/drum/dist/img/favicon.ico',
+	'/sandbox/drum/dist/css/app.css',
+	'/sandbox/drum/dist/js/index.js',
 ];
 
 self.addEventListener('install', async () => {
