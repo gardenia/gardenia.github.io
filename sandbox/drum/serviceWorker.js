@@ -3,6 +3,7 @@ const staticAssets = [
 	'/sandbox/drum/dist/img/favicon.ico',
 	'/sandbox/drum/dist/css/app.css',
 	'/sandbox/drum/dist/js/index.js',
+	'/sandbox/drum/dist/js/Tone.js',
 ];
 
 self.addEventListener('install', async () => {
