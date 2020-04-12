@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drum Pattern</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="dist/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="dist/css/app.css">
+
+<style>
+.border{
+  border: solid 1px black;
+}
+
+#canvas{
+  border: solid 1px blue;
+  /*width: 40%;*/
+}
+</style>
+
+
+</head>
+<body>
+
+<div class="container-fluid">
+<div class="row">
+  <!--
+  <div class="col-xs-2 border">content left</div>
+  -->
+  <div class="col-xs-8 border" id="main-content">
+    <div class="row">
+      <!--
+      <div class="col-xs-6">
+        Width <input id="w-input" type="number" class="form-control">
+      </div>
+      <div class="col-xs-6">
+        Height <input id="h-input" type="number" class="form-control">
+      </div>
+      <div class="col-xs-12 text-right" style="padding: 3px;">
+        <button id="set-size" class="btn btn-primary">Set</button>
+      </div> 
+    </div>
+    -->
+    <div>
+      Drum Pattern Trainer
+    </div>
+    <canvas id="canvas">
+    </canvas>
+  
+  </div>
+  <div class="col-xs-2 border">
+    <button class="button control-button" id="playButton">Play</button>
+    <button class="button control-button" id="stopButton">Stop</button>
+    <select id="patternSelect">
+      <option value="bossa-clave" selected="selected">Bossa Clave</option>
+      <option value="rumba-clave">Rumba Clave</option>
+      <option value="maracatu">Maracatu</option>
+    </select>
+    <select id="speedSelect">
+      <option value="70">70 bpm</option>
+      <option value="80">80 bpm</option>
+      <option value="90" selected="selected">90 bpm</option>
+      <option value="100">100 bpm</option>
+      <option value="110">110 bpm</option>
+      <option value="120">120 bpm</option>
+      <option value="130">130 bpm</option>
+      <option value="140">140 bpm</option>
+    </select>
+    <select id="gridStyleSelect">
+      <option value="8_x_2" selected="selected">8x2 grid</option>
+      <option value="4_x_4">4x4 grid</option>
+    </select>
+  </div>
+</div>
+</div>
+ 
+    <!--
+    <script src="https://tonejs.github.io/build/Tone.js"></script>
+    -->
+    <script src="dist/js/Tone.js"></script>
+    <script src="dist/js/index.js"></script>
+</body>
+</html>
