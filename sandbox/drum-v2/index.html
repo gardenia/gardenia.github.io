@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drum Pattern</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="shortcut icon" href="./dist/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./dist/css/app.css">
+  </head>
+  <body>
+
+  <div id="overlay">
+    <canvas id="canvas"></canvas>
+
+    <div id="header">
+      <!--
+      the header... logo
+      -->
+    </div>
+
+    <div id="mainContent">
+      <div id="vignette">
+        <div class="note" id="beat0">0<br /><span class="hand">R</span></div>
+        <div class="note" id="beat1">1<br /><span class="hand">L</span></div>
+        <div class="note" id="beat2">2<br /><span class="hand">R</span></div>
+        <div class="note" id="beat3">3<br /><span class="hand">L</span></div>
+        <div class="note" id="beat4">4<br /><span class="hand">R</span></div>
+        <div class="note" id="beat5">5<br /><span class="hand">L</span></div>
+        <div class="note" id="beat6">6<br /><span class="hand">R</span></div>
+        <div class="note" id="beat7">7<br /><span class="hand">L</span></div>
+        <div class="note" id="beat8">8<br /><span class="hand">R</span></div>
+        <div class="note" id="beat9">9<br /><span class="hand">L</span></div>
+        <div class="note" id="beat10">10<br /><span class="hand">R</span></div>
+        <div class="note" id="beat11">11<br /><span class="hand">L</span></div>
+        <div class="note" id="beat12">12<br /><span class="hand">R</span></div>
+        <div class="note" id="beat13">13<br /><span class="hand">L</span></div>
+        <div class="note" id="beat14">14<br /><span class="hand">R</span></div>
+        <div class="note" id="beat15">15<br /><span class="hand">L</span></div>
+      </div>
+    </div>
+
+    <!--
+    <div id="targetZone">
+      <div id="hands">
+        <div id="handLeft" class="hide">L</div>
+        <div id="handRight" class="hide">R</div>
+      </div>
+    </div>
+    -->
+
+    <div id="footer">
+      <div id="controls">
+        <div class="col-xs-2 border">
+          <button class="button control-button" id="playButton">Play</button>
+          <button class="button control-button" id="stopButton">Stop</button>
+          <select id="patternSelect">
+            <option value="bossa-clave" selected="selected">Bossa Clave</option>
+            <option value="3-2-clave">3-2 Clave</option>
+            <option value="luna-reggae">Luna Reggae</option>
+            <option value="maracatu">Maracatu</option>
+          </select>
+          <select id="speedSelect">
+            <option value="70">70 bpm</option>
+            <option value="80">80 bpm</option>
+            <option value="90" selected="selected">90 bpm</option>
+            <option value="100">100 bpm</option>
+            <option value="110">110 bpm</option>
+            <option value="120">120 bpm</option>
+            <option value="130">130 bpm</option>
+            <option value="140">140 bpm</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="./dist/js/Tone.js"></script>
+    <script src="./dist/js/index.js"></script>
+  </body>
+</html>
