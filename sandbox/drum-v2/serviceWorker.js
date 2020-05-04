@@ -1,10 +1,18 @@
 const staticAssets = [
 	'./index.html',
-	'./dist/img/favicon.ico',
-	'./dist/css/app.css',
 	'./dist/js/index.js',
 	'./dist/js/Tone.js',
 	'./dist/js/Tone.js.map',
+	'./dist/css/app.css',
+	'./dist/img/favicon.ico',
+	'./dist/img/icons/icon-192x192.png',
+	'./dist/img/icons/icon-128x128.png',
+	'./dist/img/icons/icon-144x144.png',
+	'./dist/img/icons/icon-72x72.png',
+	'./dist/img/icons/icon-384x384.png',
+	'./dist/img/icons/icon-96x96.png',
+	'./dist/img/icons/icon-512x512.png',
+	'./dist/img/icons/icon-152x152.png',
 ];
 
 self.addEventListener('install', async () => {
@@ -16,9 +24,8 @@ self.addEventListener('install', async () => {
 });
 
 self.addEventListener('fetch', event => {
-    console.log("serverWorker fetch fired", req.url);
 	const req = event.request;
-    console.log("fetching", req.url);
+    console.log("serverWorker fetch fired", req.url);
 	const url = new URL(req.url);
     console.log("comparing url.origin=", url.origin, " with location.url=", location.url);
 
